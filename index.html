@@ -1,12 +1,226 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZTC - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuned Trading Community</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0b0b0b;
+            font-family: Arial, sans-serif;
+            color: #e5e5e5;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 30px;
+            background: rgba(0,0,0,0.85);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+            border-bottom: 1px solid #222;
+        }
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #d4af37;
+        }
+        nav a {
+            color: #d4af37;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-header {
+            padding: 10px 20px;
+            border: 1px solid #d4af37;
+            color: #d4af37;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .hero {
+            padding-top: 130px;
+            text-align: center;
+            padding-bottom: 60px;
+            background: url('https://via.placeholder.com/1200x800/111/333?text=Candlestick+Background') center/cover no-repeat;
+        }
+        .hero h1 {
+            font-size: 42px;
+            color: #d4af37;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+        .btn {
+            background: #d4af37;
+            color: #000;
+            padding: 15px 28px;
+            border-radius: 8px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section {
+            padding: 60px 25px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 32px;
+            color: #d4af37;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .sub {
+            color: #e5e5e5;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .modul-card {
+            background: #111;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+        .modul-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .price-box {
+            margin-top: 40px;
+            font-size: 22px;
+        }
+        .price-old {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .price-now {
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .footer {
+            padding: 40px 20px;
+            background: #0a0a0a;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 1px solid #222;
+        }
+        .footer a {
+            color: #d4af37;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .testi-card {
+            max-width: 700px;
+            margin: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            margin-bottom: 18px;
+            text-align: left;
+            line-height: 1.5;
+        }
+        .testi-name {
+            color: #d4af37;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-<!-- Replace with full canvas home content manually after upload -->
-<h1>HOME PAGE</h1>
-<p>Konten lengkap Home sudah ada di canvas. Paste ke sini setelah download.</p>
+
+<header>
+    <div class="logo">ZUNED TRADING</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#modul">Modul & Ebook</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#join">Join</a>
+    </nav>
+    <a class="btn-header" href="#join">JOIN NOW</a>
+</header>
+
+<section class="hero" id="home">
+    <h1>ZUNED TRADING COMMUNITY</h1>
+    <p>Untuk bergabung, kamu diwajibkan membeli eBook & modul trading yang tersedia. Setelah itu, kamu bisa jadi member komunitas. Kami menjual ilmu, bukan sekadar membership dan sinyal.</p>
+    <a href="#join" class="btn">JOIN NOW</a>
+</section>
+
+<section class="section" id="modul">
+    <h2 class="section-title">50+ MODUL & EBOOK TRADING</h2>
+    <p class="sub">Materi lengkap untuk bantu kamu kuasai dunia trading dari A-Z.</p>
+
+    <div class="grid">
+        <div class="modul-card">
+            <img src="https://via.placeholder.com/300x400?text=Trading+Basics">
+            <b>Trading Basics</b>
+        </div>
+        <div class="modul-card">
+            <img src="https://via.placeholder.com/300x400?text=Technical+Analysis">
+            <b>Technical Analysis Explained</b>
+        </div>
+        <div class="modul-card">
+            <img src="https://via.placeholder.com/300x400?text=Price+Action">
+            <b>Introduction to Price Action</b>
+        </div>
+        <div class="modul-card">
+            <img src="https://via.placeholder.com/300x400?text=Candlestick+Essentials">
+            <b>Candle Charting Essentials</b>
+        </div>
+    </div>
+
+    <div class="price-box">
+        <span class="price-old">Rp 3.000.000</span><br>
+        <span class="price-now">Rp 1.250.000</span>
+    </div>
+</section>
+
+<section class="section" id="testimoni">
+    <h2 class="section-title">TESTIMONI MEMBER</h2>
+
+    <div class="testi-card">
+        “Komunitas trading yang sangat membantu! E-book dan modulnya informatif dan mudah dipahami.”
+        <div class="testi-name">Andi</div>
+    </div>
+    <div class="testi-card">
+        “Setelah belajar di Zuned Trading, pemahaman market naik drastis. Worth it banget!”
+        <div class="testi-name">Sri</div>
+    </div>
+</section>
+
+<section class="section" id="join">
+    <h2 class="section-title">GABUNG SEKARANG</h2>
+    <p class="sub">Dapatkan akses modul + ebook + komunitas.</p>
+    <a href="#" class="btn">ORDER SEKARANG</a>
+</section>
+
+<footer class="footer">
+    <h3 style="color:#d4af37; margin-bottom:15px;">Sosial Media</h3>
+    <a href="#">Telegram</a>
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+    <a href="#">YouTube</a>
+    <br><br>
+    <small>© 2025 Zuned Trading. All Rights Reserved.</small>
+</footer>
+
 </body>
 </html>
